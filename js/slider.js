@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let urlActual = window.location.href;
     let tipoDeContenido = "";
 
-    if (urlActual.includes("index.html")) {
+    if (urlActual.includes("/")) {
       tipoDeContenido = "all";
     } else if (urlActual.includes("peliculas.html")) {
       tipoDeContenido = "movie";

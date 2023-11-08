@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const tipo = urlParams.get("tipo");
 
   if (!id || !tipo) {
-    window.location.href = "index.html";
+    window.location.href = "/";
     return;
   }
 
