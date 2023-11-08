@@ -1,0 +1,297 @@
+body {
+  background: rgba(0, 0, 0, 1);
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.card {
+  --bs-card-bg: none;
+  --bs-card-border-color: none;
+}
+
+.cardSearch {
+  margin-bottom: 10%;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+.descripcion {
+  font-weight: 700;
+  color: white;
+  margin-top: 4%;
+}
+
+.eslogan {
+  font-weight: 700;
+  margin-top: 4%;
+}
+
+.margenContenidoSlider {
+  margin: 3%;
+}
+
+.margenContenidoSlider > img {
+  height: 600px;
+  width: auto;
+  margin-right: 5%;
+}
+
+.bordeNoImagen {
+  border: 2px solid darkgrey;
+}
+
+.bordeNoImagen .reparto {
+  height: 350px;
+}
+
+.bordeNoImagen .personas {
+  height: 300px;
+}
+
+.imagenSP {
+  height: 300px;
+  width: 100%;
+}
+
+.imagenISP {
+  height: 350px;
+  width: 100%;
+}
+
+.bordeNoImagen .episodios {
+  height: 130px;
+}
+
+.episodiosConImagen {
+  height: 130px;
+  width: 100%;
+}
+
+.noImagen {
+  height: 600px;
+  width: 400px;
+  margin-right: 5%;
+}
+
+.lista {
+  padding-left: 0;
+  font-weight: 700;
+  margin-top: 4%;
+}
+
+.lista > li {
+  list-style: none;
+  min-width: 200px;
+}
+
+.lista > li > a {
+  text-decoration: none;
+  padding: 5%;
+}
+
+.botonMostrarMas {
+  font-weight: 700;
+  border: 3px solid;
+  border-radius: 20px;
+  background-color: #555;
+  color: #fff;
+  border-color: #555;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.botonMostrarMas:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.botonesTrailerInfo {
+  font-weight: 700;
+  border: 3px solid;
+  border-radius: 20px;
+  margin-top: 4%;
+}
+
+.botonTrailer {
+  background-color: #f8f9fa;
+  color: #000;
+  border-color: #f8f9fa;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.botonTrailer:hover {
+  background-color: #dcdcdc;
+  color: #333;
+  border-color: #dcdcdc;
+}
+
+.botonMasInfo {
+  background-color: #555;
+  color: #fff;
+  border-color: #555;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.botonMasInfo:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.generos {
+  color: #fff;
+  border-color: #fff;
+}
+
+.botonesSlider {
+  width: 5%;
+}
+
+.img-dark-overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.img-dark-overlay img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-dark-overlay .noImagenDeFondo {
+  display: block;
+  max-width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.modalSearch {
+  max-height: 90vh;
+}
+
+.selector {
+  width: 20%;
+  margin-left: 1%;
+}
+
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.primero {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.segundo {
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tercero {
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.segundoEp {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.terceroEp {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover .play-icon,
+.card:hover .overlay,
+.card:hover .primero,
+.card:hover .segundo,
+.card:hover .tercero,
+.card:hover .segundoEp,
+.card:hover .terceroEp,
+.img-dark-overlay:hover img {
+  opacity: 1;
+}
