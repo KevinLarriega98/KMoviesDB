@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let tipo;
 
-    if (urlActual.includes("/KMoviesDB/series.html")) {
+    if (urlActual.includes("series.html")) {
       tipo = "tv";
       apiUrl = construirApiUrlFinal(tipo, generoSeleccionado, paginaActual);
     } else {
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let tipo;
 
-    if (urlActual.includes("/KMoviesDB/series.html")) {
+    if (urlActual.includes("series.html")) {
       tipo = "tv";
       apiUrl = construirApiUrlInicial(tipo, idDelGenero, paginaActual);
     } else {
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let urlActual = window.location.href;
     let apiUrl;
 
-    if (urlActual.includes("/KMoviesDB/series.html")) {
+    if (urlActual.includes("series.html")) {
       apiUrl = construirApiUrlGenero("tv");
     } else {
       apiUrl = construirApiUrlGenero("movie");
