@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let urlActual = window.location.href;
     let tipoDeContenido = "";
 
-    if (urlActual.includes("/")) {
+    if (urlActual.includes("/KMoviesDB/")) {
       tipoDeContenido = "all";
-    } else if (urlActual.includes("peliculas.html")) {
+    } else if (urlActual.includes("/peliculas.html")) {
       tipoDeContenido = "movie";
     } else {
       tipoDeContenido = "tv";
