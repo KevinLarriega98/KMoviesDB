@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
       tipoDeContenido = "tv";
     }
 
+    console.log(urlActual)
+    console.log(tipoDeContenido)
+
     const apiUrl = `https://api.themoviedb.org/3/trending/${tipoDeContenido}/week?api_key=${apiKey}&language=${idioma}`;
 
     const contenedorDelCarrusel = document.querySelector(
